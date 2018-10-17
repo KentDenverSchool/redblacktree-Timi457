@@ -36,31 +36,7 @@ public class RBTDriver.java
         System.out.println(test.isRBT());
 
 
-        test.put(4,0);
-        test.put(10,0);
-        test.put(6,0);
-        test.put(2,0);
-        test.put(9,0);
-        test.put(7,0);
-        test.put(3,0);
-        test.put(5,0);
-        test.put(4.5,0);
-        test.put(8,0);
-
-        RedBlackBST<Integer,String> rbBST;
-        Node <Integer, String> one= new RBNode<>(20,"dumb",3,false);
-        RBNode<Integer, String> left= new RBNode<>(8,"dumber",1,false);
-        RBNode<Integer, String> right= new RBNode<>(12,"dumbest",1,true);
-        one.setRight(right);
-        one.setLeft(left);
-        RBNode<Integer, String> leftRight= new RBNode<>(9,"dumbest",1,true);
-        left.setRight(leftRight);
-        rbBST= new RedBlackBST<>(one);
-        System.out.println(rbBST.isEmpty());
-        System.out.println(rbBST.isRBT());
-        rbBST.rotateRight(one);
-        System.out.println(rbBST.gParent(left));
-
+        
 
         }
 }
